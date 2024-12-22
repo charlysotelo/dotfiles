@@ -1,4 +1,3 @@
 #!/bin/bash
-echo "TEST"
+echo "In dotfiles setup.sh..."
 printenv
-pwd

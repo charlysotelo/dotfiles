@@ -1,2 +1,2 @@
 #!/bin/bash
-./install_tmux_tpm.sh
+./install_tmux_conf.sh

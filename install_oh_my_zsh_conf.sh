@@ -7,7 +7,7 @@ if [ -d "${HOME}/.oh-my-zsh/themes" ]; then
   sed -i 's/ZSH_THEME="[^"]*"/ZSH_THEME="charly"/' ${HOME}/.zshrc
 fi
 
-cat << EOF > ${HOME}/.zshrc
+cat << EOF >> ${HOME}/.zshrc
 export HISTSIZE=10000000
 export SAVEHIST=10000000
 setopt SHARE_HISTORY

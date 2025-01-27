@@ -3,6 +3,7 @@ SCRIPT_DIR=$(dirname "$(realpath $0)")
 
 if [ "${INSTALL_OH_MY_ZSH}" = "true" ] && [ ! -d "${HOME}/.oh-my-zsh" ]; then
   echo "Installing Oh-My-Zsh..."
+  ${SCRIPT_DIR}/install_package.sh -f zsh
   pushd ${HOME}
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   popd

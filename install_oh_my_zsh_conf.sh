@@ -1,7 +1,7 @@
 #!/bin/bash
 SCRIPT_DIR=$(dirname "$(realpath $0)")
 
-if [ ${INSTALL_OH_MY_ZSH} = "true" ] && [ ! -d "${HOME}/.oh-my-zsh"]; then
+if [ ${INSTALL_OH_MY_ZSH} = "true" ] && [ ! -d "${HOME}/.oh-my-zsh" ]; then
   echo "Installing Oh-My-Zsh..."
   curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 fi

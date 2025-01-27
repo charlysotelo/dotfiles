@@ -1,6 +1,11 @@
 #!/bin/bash
 SCRIPT_DIR=$(dirname "$(realpath $0)")
 
+if [ ${INSTALL_OH_MY_ZSH} = "true" ] && [ ! -d "${HOME}/.oh-my-zsh"]; then
+  echo "Installing Oh-My-Zsh..."
+  curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+fi
+
 if [ -d "${HOME}/.oh-my-zsh/themes" ]; then
   echo "Installing charly.zsh-theme..."
   ln -sf ${SCRIPT_DIR}/.oh-my-zsh/themes/charly.zsh-theme ${HOME}/.oh-my-zsh/themes/charly.zsh-theme

@@ -20,3 +20,7 @@ export HISTSIZE=10000000
 export SAVEHIST=10000000
 setopt SHARE_HISTORY
 EOF
+
+cat << EOF >> ${HOME}/.zshrc
+export PATH="${HOME}/.local/bin:${PATH}"
+EOF

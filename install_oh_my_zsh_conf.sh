@@ -18,7 +18,6 @@ fi
 # Plugins
 sed -i -E '/^plugins=/s/.*/plugins=(git kubectl)/' ${HOME}/.zshrc
 
-# TODO: configure Atuin
 cat << EOF >> ${HOME}/.zshrc
 export HISTSIZE=10000000
 export SAVEHIST=10000000

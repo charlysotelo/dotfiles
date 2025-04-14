@@ -10,6 +10,7 @@ if ! command -v nvim > /dev/null 2>&1; then
   mkdir -p "$TEMP_DIR"
   pushd "$TEMP_DIR"
   curl -LO "$TARBALL_URL"
+  mkdir -p "${HOME}/.local"
   tar xzf "${TARBALL_NAME}" --strip-components=1 -C ${HOME}/.local/
   rm -rf $TEMP_DIR
   sed -i '/alias vim='\''nvim'\''/!{$s/$/\nalias vim='\''nvim'\''/}' ~/.zshrc

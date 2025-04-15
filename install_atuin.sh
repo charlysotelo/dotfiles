@@ -5,7 +5,7 @@ if ! command -v atuin > /dev/null 2>&1; then
   source ${HOME}/.atuin/bin/env
 fi
 
-if [ ${ATUIN_PERSONAL_LOGIN} = "true" ]; then
+if [ "${ATUIN_PERSONAL_LOGIN}" = "true" ]; then
   atuin login -u ${ATUIN_USERNAME} -p ${ATUIN_PASSWORD} -k "${ATUIN_KEY}"
   atuin sync
 fi
